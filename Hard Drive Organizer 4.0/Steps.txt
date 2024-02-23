@@ -1,0 +1,36 @@
+Program that will analyze contents of a folder
+Distinguish between folders and files in current dir
+Once the program recognizes a file it needs to grab files
+    modification month/ modification year/ file extension type
+the program grabs that info and checks if a folder with those specifications exists
+if it does then move file to that folder
+if not, create folder and then move file
+Program encounters a new dir, program steps into that new dir and process repeats
+Once program encounters dir that is empty, delete dir and step back to previous dir
+
+
+Wants:
+    Way for program to stop at dir given from user
+        Dir given is where user wants organizing to start
+    Function that creates folder for file
+        should check if exists first if not then create once and returns it was made
+
+Functions:
+    Function that checks if item given to it (dir of item) is file or folder
+        returns whether is file or folder
+
+    Function that takes file's year/month/ext type and checks if file exists
+        check for folder
+        while not exist
+            create folder
+        return that folder exists
+
+    Function that grabs a list of dir's items
+        returns list of items
+
+    Function that deletes current dir if list is empty
+
+    Function that takes current file and extracts file's year/month/ext type
+        returns those items
+
+    
