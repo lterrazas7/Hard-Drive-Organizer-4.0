@@ -33,4 +33,9 @@ Functions:
     Function that takes current file and extracts file's year/month/ext type
         returns those items
 
+
+Figuring out how to loop through
+if working_dir == starting_dir and working_dir is empty
+    quit program
+
     
