@@ -38,4 +38,65 @@ Figuring out how to loop through
 if working_dir == starting_dir and working_dir is empty
     quit program
 
+
+Figure out how to make an "organized folder"
+within file path given from user and have the program ignore it
+    when file path is given to start organizing and is valid
+    program should make a folder, this is where items will be stored
+    when getting a list of items from given dir
+    the function returning the list should ignore that folder name
+    #this should work since the program is going based off of items in returned list?
+
+
+Concept for files in folder:
+    when list gets returned from current folder
+    for loop needs to go through each item
+    if it encounters a file
+        store file name/file path in list - repeat until all files in folder match list
+    if it encounters folder
+        store folder name/folder path in list - repeat until all folders in folder match list
+    #figure out way to match items in current dir to items in both lists
+    process files first and start removing items from list containing files
+    only when dir is rid of files and list containing files is empty
+    may it step into first folder it encounters
+        this removes all folders from list and starts over
+
+Steps:
+    get user input for path
+    check if user input is valid
+
+    while not valid
+        ask for valid path
+        give option to quit
+        check for valid path
+
+    store starting path for later
+    assign variable that will change and will be worked on for dir
+    #create folder where items will be stored and have list returned not include folder
+
+    while true
+        if path is starting and path list is empty
+            quit program - it has cycled through everything at this point
+
+        if path returns empty list
+            delete current dir in path and move back one spot
+
+        else: - automatic response since list returns with items indicating stuff is in there
+            send list of items to function that will divide files and folders into two lists
+
+            if files list is empty
+                step into next folder in folders list
+
+            else:
+                for loop items in file list
+                    working_file =  make object of file - file year, file month, file ext type, file path
+                    send object's file year/month/ext type to function that checks if where file is going exists
+                    while folder exists returns False:
+                        create folder
+                        send to check if folders exists
+                    move file to that stored folder
+    #pick back up here 
+
+
+
     
