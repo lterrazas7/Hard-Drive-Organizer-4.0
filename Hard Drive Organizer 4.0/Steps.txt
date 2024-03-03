@@ -1,3 +1,12 @@
+Working parts of program:
+    check_path() works
+    dir_list() works
+    dir_files() works
+    dir_folders() works
+    first if in while loop works
+    elif in while loop for empty list works
+
+------------------------------------------------------------------
 Program that will analyze contents of a folder
 Distinguish between folders and files in current dir
 Once the program recognizes a file it needs to grab files
@@ -95,7 +104,15 @@ Steps:
                         create folder
                         send to check if folders exists
                     move file to that stored folder
-    #pick back up here 
+                    check path of file is valid
+                    if false:
+                        stop program - something is wrong
+                    if true:
+                        it worked - file is in new organized folder
+
+                needs to move to another folder
+
+
 
 
 
